@@ -1,30 +1,54 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Eupa Bioinformatics Initiave</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 01 Dec 2015 10:55:25 +0100</pubDate>
+    <lastBuildDate>Tue, 01 Dec 2015 10:55:25 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Eupa Bioinformatics Initiave</title>
+        <description>&lt;p&gt;The Eupa Bioinformatics Initiative, supported by EUPA, is a new open community of both users and experts in computational proteomics and related mass spectrometry fields. It is a platform that provides targeted training and support for every level of expertise for any profession (PhD students, researchers, companies), defining guidelines for open software (bioinformatics solutions), development and (re)usage with coordination of software development efforts and as the ultimate goal, to make the field of computational proteomics more accessible to society. The community will establish guidelines and provide support to increase the quality and sustainability of bioinformatics solutions in computational proteomics.&lt;/p&gt;
+
+&lt;p&gt;Our mission is to:&lt;/p&gt;
+
+&lt;p&gt;1- Build a community of bioinformaticians in computational proteomics,&lt;/p&gt;
+
+&lt;p&gt;2- Bridge the gap between users and developers of bioinformatics solutions&lt;/p&gt;
+
+&lt;p&gt;3- Implement a quality assessment for tools, scripts and related topics&lt;/p&gt;
+
+&lt;p&gt;4- Identify key research lines and establish coordinated expert groups for their investigation&lt;/p&gt;
+
+&lt;p&gt;5- Organize educational sessions (congresses, workshops, webinars…)&lt;/p&gt;
+
+&lt;p&gt;6- Provide follow-up help for the integration of existing tools in workflows&lt;/p&gt;
+
+&lt;p&gt;7- Raise awareness for the benefits of continuously supported open software&lt;/p&gt;
+
+&lt;p&gt;8- Accredit tools that conform high quality standards.&lt;/p&gt;
+
+&lt;p&gt;This initiative currently organizes the First Annual Conference in European Computational Proteomics. As a long term goal, the focus will be extended to the main fields of computational mass spectrometry (metabolomics, lipidomics). In summary, the Eupa Bioinfomatics Initiative can be considered as the starting point for a new era in coordination of Computational Mass Spectrometry in Europe. &lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://www.eupa.org&quot;&gt;Eupa Home Page&lt;/a&gt; for more information about the European Proteomics Association and &lt;a href=&quot;http://www.eupa.org/index.php/eupa-initiatives&quot;&gt;Eupa Initiaves&lt;/a&gt; for other initiatives. &lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 01 Dec 2015 10:27:07 +0100</pubDate>
+        <link>http://yourdomain.com/introduction/mission/information/2015/12/01/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/introduction/mission/information/2015/12/01/welcome-to-jekyll.html</guid>
+        
+        
+        <category>introduction</category>
+        
+        <category>mission</category>
+        
+        <category>information</category>
+        
       </item>
-    {% endfor %}
+    
   </channel>
 </rss>
